@@ -4,6 +4,7 @@ using Northwind.Models;
 
 namespace Northwind.Models
 {
+    // Interface defining NorthwindRepository
     public interface INorthwindRepository
     {
         IQueryable<Category> Categories { get; }

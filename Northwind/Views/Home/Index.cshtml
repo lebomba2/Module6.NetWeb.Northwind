@@ -1,11 +1,26 @@
-﻿<div class="jumbotron my-2">
+﻿<!--<div class="jumbotron my-2">
     <h1 class="display-4">Northwind</h1>
     <p class="lead">We have the best prices and selection of high quality foods &amp; beverages on the planet! Check out our featured discounts below.</p>
     <hr class="my-4">
     <p>For exceptional international quisuine, look no further.</p>
     <a class="btn btn-outline-primary btn-lg" href="#" role="button"><i class="fas fa-shopping-cart"></i> Order Now</a>
 </div>
+-->
+<!-- import the Models folder-->
+@using Northwind.Models
+<!-- define the variable model as an IEnumerable<Category> -->
+@model IEnumerable<Category>
 
+<ul>
+    <!-- razor foreach loop-->
+    @foreach (Category category in Model)
+    {
+        <!-- for each category in model, print a list item-->
+        <li>@category.CategoryName - @category.Description</li>
+    }
+</ul>
+
+<!-- define a section named Scripts. This section is referenced in the _Layout.cshtml-->
 @section Scripts {
     <script type="text/javascript" src="/js/client.js"></script>
 }

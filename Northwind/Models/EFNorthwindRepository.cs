@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace Northwind.Models
 {
+    // implementing the INorthwindRepository
     public class EFNorthwindRepository : INorthwindRepository
     {
         // the repository class depends on the BloggingContext service

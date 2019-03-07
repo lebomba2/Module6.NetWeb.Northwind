@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Northwind.Models
 {
+    // Define the Prodct model
     public class Product
     {
         public int ProductId { get; set; }
@@ -16,6 +17,7 @@ namespace Northwind.Models
         public short ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
 
+        // link the product to the corresponding Category
         public int CategoryId { get; set; }
         public Category Category { get; set; }
     }
